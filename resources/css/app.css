@@ -1,0 +1,77 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --sky-primary: #0284C7;
+    --sky-dark: #0369A1;
+    --sky-light: #E0F2FE;
+    --sky-accent: #38BDF8;
+    --text-main: #0F172A;
+    --text-muted: #64748B;
+    --border-sky: rgba(2, 132, 199, 0.2);
+  }
+
+  body {
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Sky Blue Gradient Text & Highlights */
+.sky-gradient-text {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 50%, #075985 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sky-gradient-bg {
+  background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+}
+
+.sky-gradient-bg:hover {
+  background: linear-gradient(135deg, #0369A1 0%, #075985 100%);
+}
+
+.sky-banner-bg {
+  background: linear-gradient(135deg, #0284C7 0%, #006699 60%, #0369A1 100%);
+}
+
+.sky-border-glow {
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.08);
+}
+
+.sky-border-glow:hover {
+  border-color: rgba(2, 132, 199, 0.6);
+  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(2, 132, 199, 0.15);
+}
+
+/* Ticker Animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 30s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
