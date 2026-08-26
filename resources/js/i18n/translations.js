@@ -22,6 +22,7 @@ export const translations = {
             teamListening: "Notre équipe est à votre écoute.",
             mainNavAria: "Navigation principale",
             changeLanguage: "Changer de langue",
+            introTagline: "Redéfinir l'investissement en Afrique Centrale",
         },
         utility: {
             calculator: "Calculateur",
@@ -287,6 +288,7 @@ export const translations = {
             teamListening: "Our team is here for you.",
             mainNavAria: "Main navigation",
             changeLanguage: "Change language",
+            introTagline: "Redefining investment in Central Africa",
         },
         utility: {
             calculator: "Calculator",
@@ -552,6 +554,7 @@ export const translations = {
             teamListening: "A nossa equipa está à sua escuta.",
             mainNavAria: "Navegação principal",
             changeLanguage: "Mudar de idioma",
+            introTagline: "Redefinir o investimento na África Central",
         },
         utility: {
             calculator: "Calculadora",
