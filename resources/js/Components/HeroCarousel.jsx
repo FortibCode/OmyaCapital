@@ -48,21 +48,37 @@ export default function HeroCarousel() {
     const HERO_SLIDES = [
         {
             id: 1,
-            image: '/images/image-hero-1.png',
+            image: '/images/image-hero-1.webp',
         },
         {
             id: 2,
-            image: '/images/image-hero-2.png',
+            image: '/images/image-hero-2.webp',
         },
         {
             id: 3,
-            image: '/images/image-hero-3.png',
+            image: '/images/image-hero-3.webp',
         },
         {
             id: 4,
-            image: '/images/image-hero-4.png',
+            image: '/images/image-hero-4.webp',
         },
     ];
+
+    // Only the active slide plus the next one are fetched — the rest load
+    // just-in-time as the carousel advances, instead of all 4 upfront.
+    const [loadedIndices, setLoadedIndices] = useState(() => new Set([0, 1 % HERO_SLIDES.length]));
+
+    useEffect(() => {
+        setLoadedIndices((prev) => {
+            if (prev.has(currentIndex) && prev.has((currentIndex + 1) % HERO_SLIDES.length)) {
+                return prev;
+            }
+            const next = new Set(prev);
+            next.add(currentIndex);
+            next.add((currentIndex + 1) % HERO_SLIDES.length);
+            return next;
+        });
+    }, [currentIndex, HERO_SLIDES.length]);
 
     const nextSlide = useCallback(() => {
         setDirection(1);
@@ -120,9 +136,11 @@ export default function HeroCarousel() {
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
             >
-                {/* ══ AUTOMATICALLY CROSSFADING BACKGROUND IMAGES (ALL 4 PRELOADED) ══ */}
+                {/* ══ AUTOMATICALLY CROSSFADING BACKGROUND IMAGES (CURRENT + NEXT ONLY) ══ */}
                 {HERO_SLIDES.map((slide, idx) => {
                     const isActive = idx === currentIndex;
+                    if (!loadedIndices.has(idx)) return null;
+
                     return (
                         <motion.div
                             key={slide.id}

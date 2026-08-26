@@ -2,7 +2,6 @@ import React from 'react';
 import HeaderNav from '@/Components/HeaderNav';
 import RateTicker from '@/Components/RateTicker';
 import OmyaLogo from '@/Components/OmyaLogo';
-import IntroLoader from '@/Components/IntroLoader';
 import { motion } from 'framer-motion';
 import { Link } from '@inertiajs/react';
 import { Shield, Globe, PhoneCall, Mail, ArrowRight, Share2, Rss } from 'lucide-react';
@@ -10,9 +9,6 @@ import { Shield, Globe, PhoneCall, Mail, ArrowRight, Share2, Rss } from 'lucide-
 export default function PublicLayout({ children, exchangeRates = [], interestRates = [], macroIndicators = [], hideFooter = false, hideNav = false }) {
     return (
         <div className="min-h-screen bg-[#F8FAFC] text-slate-800 font-sans flex flex-col selection:bg-sky-500 selection:text-white">
-            {/* Intro Loader Splash Screen */}
-            <IntroLoader />
-
             {/* 1. Ticker Header & 2. Navbar */}
             {!hideNav && (
                 <>
