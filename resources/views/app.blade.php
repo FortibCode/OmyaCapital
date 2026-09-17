@@ -3,8 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital..." />
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title inertia>{{ config('app.name', 'OMYA CAPITAL') }}</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" type="image/png" href="/favicon.png">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
