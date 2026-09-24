@@ -40,8 +40,8 @@
         <!-- Schema.org — Données structurées pour Google (Rich Results) -->
         <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "FinancialService",
+            "@@context": "https://schema.org",
+            "@@type": "FinancialService",
             "name": "OMYA CAPITAL",
             "alternateName": "Omya Capital",
             "url": "https://omya-capital.com",
@@ -51,14 +51,14 @@
             "email": "contact@omya-capital.com",
             "telephone": "+242050987541",
             "address": {
-                "@type": "PostalAddress",
+                "@@type": "PostalAddress",
                 "streetAddress": "76 avenue Amilcar Cabral, Immeuble Villarecci, en face du Radisson Blu",
                 "addressLocality": "Brazzaville",
                 "addressRegion": "Centre-ville",
                 "addressCountry": "CG"
             },
             "contactPoint": {
-                "@type": "ContactPoint",
+                "@@type": "ContactPoint",
                 "telephone": "+242050987541",
                 "email": "contact@omya-capital.com",
                 "contactType": "customer service",
