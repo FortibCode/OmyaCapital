@@ -10,15 +10,15 @@
         <title inertia>{{ config('app.name', 'OMYA CAPITAL') }}</title>
 
         <!-- Favicon -->
-        <link rel="icon" href="/favicon.ico" sizes="any">
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/omya-capital-logo.png">
+        <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
+        <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/omya-capital-logo.png') }}">
 
         <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
         <meta property="og:type" content="website">
         <meta property="og:title" content="OMYA CAPITAL - Partenaire Stratégique en Gestion de Capital">
         <meta property="og:description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
-        <meta property="og:image" content="/images/omya-capital-logo.png">
+        <meta property="og:image" content="{{ asset('images/omya-capital-logo.png') }}">
         <meta property="og:image:alt" content="Logo OMYA CAPITAL">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:locale" content="fr_FR">
@@ -28,7 +28,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="OMYA CAPITAL - Partenaire Stratégique en Gestion de Capital">
         <meta name="twitter:description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
-        <meta name="twitter:image" content="/images/omya-capital-logo.png">
+        <meta name="twitter:image" content="{{ asset('images/omya-capital-logo.png') }}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
