@@ -17,7 +17,7 @@
 
         <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
         <meta property="og:type" content="website">
-        <meta property="og:title" content="OMYA CAPITAL - Partenaire Stratégique en Gestion de Capital">
+        <meta property="og:title" content="OMYA CAPITAL Partenaire Stratégique en Gestion de Capital">
         <meta property="og:description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
         <meta property="og:image" content="{{ asset('images/omya-capital-logo.png') }}">
         <meta property="og:image:alt" content="Logo OMYA CAPITAL">
