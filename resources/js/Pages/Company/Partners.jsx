@@ -6,7 +6,12 @@ import { Building2 } from 'lucide-react';
 export default function Partners({ partners = [] }) {
     return (
         <PublicLayout>
-            <Head title="Partenaires Institutionnels - OMYA CAPITAL" />
+            <Head>
+                <title>Partenaires Institutionnels - OMYA CAPITAL</title>
+                <meta name="description" content="Découvrez le réseau de banques, fonds et partenaires institutionnels de premier plan qui collaborent avec OMYA CAPITAL." />
+                <meta property="og:title" content="Partenaires Institutionnels - OMYA CAPITAL" />
+                <meta property="og:description" content="Réseau partenaire banques, fonds d'investissement et institutions financières de la zone CEMAC & UEMOA." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

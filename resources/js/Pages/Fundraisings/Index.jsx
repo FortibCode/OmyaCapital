@@ -10,7 +10,12 @@ export default function Index({ fundraisings = [] }) {
 
     return (
         <PublicLayout>
-            <Head title="Levées de Fonds & Private Equity - OMYA CAPITAL" />
+            <Head>
+                <title>Levées de Fonds & Private Equity - OMYA CAPITAL</title>
+                <meta name="description" content="Découvrez nos opportunités de levées de fonds et capital-investissement pour financer la croissance des PME en Afrique Centrale." />
+                <meta property="og:title" content="Levées de Fonds & Private Equity - OMYA CAPITAL" />
+                <meta property="og:description" content="Opportunités d'investissement en dette privée et fonds propres pour entreprises en forte croissance." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

@@ -6,7 +6,12 @@ import { FileText, Download } from 'lucide-react';
 export default function Reports({ reports = [] }) {
     return (
         <PublicLayout>
-            <Head title="Rapports & Études Économiques - OMYA CAPITAL" />
+            <Head>
+                <title>Rapports & Études Économiques - OMYA CAPITAL</title>
+                <meta name="description" content="Téléchargez les rapports économiques, études sectorielles et notes de recherche financière édictés par OMYA CAPITAL." />
+                <meta property="og:title" content="Rapports & Études Économiques - OMYA CAPITAL" />
+                <meta property="og:description" content="Études de marché, notes sectorielles et analyses économiques pour investisseurs." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

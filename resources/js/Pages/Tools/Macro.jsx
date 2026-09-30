@@ -6,7 +6,12 @@ import { Globe } from 'lucide-react';
 export default function Macro({ macroIndicators = [] }) {
     return (
         <PublicLayout macroIndicators={macroIndicators}>
-            <Head title="Informations Macroéconomiques - OMYA CAPITAL" />
+            <Head>
+                <title>Informations Macroéconomiques - OMYA CAPITAL</title>
+                <meta name="description" content="Tableau de bord des indicateurs macroéconomiques majeurs en zone CEMAC et UEMOA (Croissance PIB, inflation, réserves de change)." />
+                <meta property="og:title" content="Informations Macroéconomiques - OMYA CAPITAL" />
+                <meta property="og:description" content="Suivi des indicateurs économiques sous-régionaux par le bureau d'études OMYA CAPITAL." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

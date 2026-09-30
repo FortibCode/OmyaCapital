@@ -71,7 +71,12 @@ export default function Index({ activeSection = 'presentation', partners = [] })
 
     return (
         <PublicLayout>
-            <Head title="À Propos - OMYA CAPITAL | Société Intermédiaire Financière" />
+            <Head>
+                <title>À Propos - OMYA CAPITAL | Société Intermédiaire Financière</title>
+                <meta name="description" content="Découvrez OMYA CAPITAL S.A., Société Intermédiaire Financière (SIF) agréée en zone CEMAC & UEMOA. Notre mission, vision, valeurs et équipe dirigeante." />
+                <meta property="og:title" content="À Propos - OMYA CAPITAL S.A." />
+                <meta property="og:description" content="Société Intermédiaire Financière agréée en zone CEMAC & UEMOA. Structuration, placement et conseil financier." />
+            </Head>
 
             {/* Page Hero Banner */}
             <section className="sky-banner-bg text-white py-16 relative overflow-hidden">

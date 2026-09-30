@@ -6,7 +6,12 @@ import { ShieldCheck, Award, Target, Eye, Users, Building2, CheckCircle2 } from 
 export default function Presentation({ partners = [] }) {
     return (
         <PublicLayout>
-            <Head title="Présentation & Gouvernance - OMYA CAPITAL SIF" />
+            <Head>
+                <title>Présentation & Gouvernance - OMYA CAPITAL SIF</title>
+                <meta name="description" content="Découvrez la présentation officielle d'OMYA CAPITAL S.A., son modèle de gouvernance, son comité d'investissement et sa déontologie." />
+                <meta property="og:title" content="Présentation & Gouvernance - OMYA CAPITAL SIF" />
+                <meta property="og:description" content="Modèle de gouvernance, comité d'investissement et normes de conformité KYC/AML d'OMYA CAPITAL." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 {/* Header */}

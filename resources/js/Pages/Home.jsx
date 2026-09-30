@@ -60,7 +60,12 @@ export default function Home({ services = [], partners = [] }) {
     return (
         <PublicLayout hideFooter hideNav>
 
-            <Head title={t('home.title')} />
+            <Head>
+                <title>{t('home.title') || 'OMYA CAPITAL - Partenaire Stratégique en Gestion de Capital'}</title>
+                <meta name="description" content="OMYA CAPITAL est votre partenaire stratégique en gestion de capital, structuration financière, placement et investissement en zone CEMAC & UEMOA." />
+                <meta property="og:title" content="OMYA CAPITAL - Partenaire Stratégique en Gestion de Capital" />
+                <meta property="og:description" content="OMYA CAPITAL est votre partenaire stratégique en gestion de capital, structuration financière, placement et investissement en zone CEMAC & UEMOA." />
+            </Head>
 
             {/* ══ HERO CAROUSEL ══ */}
             <HeroCarousel />

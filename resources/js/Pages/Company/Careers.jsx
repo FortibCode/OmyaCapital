@@ -44,7 +44,12 @@ export default function Careers({ careers = [] }) {
 
     return (
         <PublicLayout>
-            <Head title="Carrière & Recrutement - OMYA CAPITAL | Rejoindre nos équipes" />
+            <Head>
+                <title>Carrière & Recrutement - OMYA CAPITAL | Rejoindre nos équipes</title>
+                <meta name="description" content="Rejoignez OMYA CAPITAL, Société Intermédiaire Financière majeure. Découvrez nos opportunités de carrière et candidater auprès de nos équipes." />
+                <meta property="og:title" content="Carrière & Recrutement - OMYA CAPITAL" />
+                <meta property="og:description" content="Rejoignez des experts passionnés par l'ingénierie financière et le développement économique en Afrique." />
+            </Head>
 
             {/* Hero Banner */}
             <section className="sky-banner-bg text-white py-16 relative overflow-hidden">

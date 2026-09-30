@@ -15,7 +15,12 @@ export default function Contact() {
 
     return (
         <PublicLayout>
-            <Head title="Contact & Siège Social - OMYA CAPITAL | SIF" />
+            <Head>
+                <title>Contact & Siège Social - OMYA CAPITAL | SIF</title>
+                <meta name="description" content="Contactez OMYA CAPITAL à Brazzaville (République du Congo). Coordonnées, siège social, horaires et réservation de rendez-vous avec un conseiller SIF." />
+                <meta property="og:title" content="Contact & Siège Social - OMYA CAPITAL" />
+                <meta property="og:description" content="Prenez contact avec nos conseillers financiers à Brazzaville pour vos projets d'investissement et de financement." />
+            </Head>
 
             {/* Page Hero */}
             <section className="sky-banner-bg text-white py-16 relative overflow-hidden">

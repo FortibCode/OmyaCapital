@@ -6,7 +6,12 @@ import { Award, ShieldCheck, ArrowRight } from 'lucide-react';
 export default function Recommendations() {
     return (
         <PublicLayout>
-            <Head title="Recommandations Stratégiques & Financières - OMYA CAPITAL" />
+            <Head>
+                <title>Recommandations Stratégiques & Financières - OMYA CAPITAL</title>
+                <meta name="description" content="Recommandations d'investissement et arbitrages stratégiques formulés par le comité d'analyse d'OMYA CAPITAL." />
+                <meta property="og:title" content="Recommandations Stratégiques - OMYA CAPITAL" />
+                <meta property="og:description" content="Recommandations sur les taux, obligations privées et portefeuilles d'investissements." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

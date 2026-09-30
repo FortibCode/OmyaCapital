@@ -28,7 +28,12 @@ export default function Index({
 
     return (
         <PublicLayout exchangeRates={exchangeRates} interestRates={interestRates} macroIndicators={macroIndicators}>
-            <Head title="Marchés Financiers & Produits - OMYA CAPITAL" />
+            <Head>
+                <title>Marchés Financiers & Produits Structurés - OMYA CAPITAL</title>
+                <meta name="description" content="Découvrez le panorama des marchés financiers en zone CEMAC/UEMOA : actions, obligations privées, OPCVM et indicateurs économiques." />
+                <meta property="og:title" content="Marchés Financiers & Produits Structurés - OMYA CAPITAL" />
+                <meta property="og:description" content="Opportunités de placement, taux d'intérêt et analyses de marchés par OMYA CAPITAL." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-12">

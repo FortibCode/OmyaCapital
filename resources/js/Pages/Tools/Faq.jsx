@@ -21,7 +21,12 @@ export default function Faq() {
 
     return (
         <PublicLayout>
-            <Head title="Faq & Questions Fréquentes - OMYA CAPITAL" />
+            <Head>
+                <title>FAQ & Questions Fréquentes - OMYA CAPITAL</title>
+                <meta name="description" content="Réponses aux questions fréquentes concernant la souscription aux placements OMYA CAPITAL, les procédures SIF, la fiscalité et la conformité KYC/AML." />
+                <meta property="og:title" content="FAQ & Questions Fréquentes - OMYA CAPITAL" />
+                <meta property="og:description" content="Toutes les réponses à vos questions sur la Société Intermédiaire Financière OMYA CAPITAL." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

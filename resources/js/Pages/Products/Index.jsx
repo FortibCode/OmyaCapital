@@ -10,7 +10,12 @@ export default function Index({ products = [] }) {
 
     return (
         <PublicLayout>
-            <Head title="Produits Financiers & Placements - OMYA CAPITAL" />
+            <Head>
+                <title>Produits Financiers & Placements - OMYA CAPITAL</title>
+                <meta name="description" content="Découvrez notre gamme de placements financiers, obligations privées et produits structurés avec rendements cibles attractifs en zone CEMAC." />
+                <meta property="og:title" content="Produits Financiers & Placements - OMYA CAPITAL" />
+                <meta property="og:description" content="Investissements obligataires et portefeuilles sur-mesure pour particuliers qualifiés et institutionnels." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

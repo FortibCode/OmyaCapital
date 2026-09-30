@@ -8,6 +8,7 @@
         <meta name="robots" content="index, follow">
 
         <title inertia>{{ config('app.name', 'OMYA CAPITAL') }}</title>
+        <link rel="canonical" href="{{ url()->current() }}">
 
         <!-- Favicon -->
         <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">

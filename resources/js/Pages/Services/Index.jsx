@@ -63,7 +63,12 @@ export default function Index({ services = [] }) {
 
     return (
         <PublicLayout>
-            <Head title="Nos Métiers & Services SIF - OMYA CAPITAL" />
+            <Head>
+                <title>Nos Métiers & Services SIF - OMYA CAPITAL</title>
+                <meta name="description" content="Découvrez nos services d'ingénierie financière : Conseil stratégique, placement financier & produits structurés, levée de fonds, M&A et financement structuré en zone CEMAC & UEMOA." />
+                <meta property="og:title" content="Nos Métiers & Services SIF - OMYA CAPITAL" />
+                <meta property="og:description" content="Conseil financier stratégique, placement sur-mesure, levée de fonds et ingénierie de dette privée." />
+            </Head>
 
             {/* Page Hero Banner */}
             <section className="sky-banner-bg text-white py-16 relative overflow-hidden">

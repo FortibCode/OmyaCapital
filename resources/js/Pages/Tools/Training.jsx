@@ -6,7 +6,12 @@ import { BookOpen, GraduationCap, ArrowRight } from 'lucide-react';
 export default function Training() {
     return (
         <PublicLayout>
-            <Head title="Formation & Éducation Financière - OMYA CAPITAL" />
+            <Head>
+                <title>Formation & Éducation Financière - OMYA CAPITAL</title>
+                <meta name="description" content="Programmes de formation et d'éducation financière dispensés par OMYA CAPITAL sur la gestion de patrimoine et les placements en Afrique." />
+                <meta property="og:title" content="Formation & Éducation Financière - OMYA CAPITAL" />
+                <meta property="og:description" content="Académie SIF OMYA CAPITAL : formations aux marchés de capitaux, dette privée et ingénierie financière." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

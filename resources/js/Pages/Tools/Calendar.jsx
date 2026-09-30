@@ -6,7 +6,12 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 export default function ToolsCalendar({ fundraisings = [] }) {
     return (
         <PublicLayout>
-            <Head title="Calendrier Financier - OMYA CAPITAL" />
+            <Head>
+                <title>Calendrier Financier - OMYA CAPITAL</title>
+                <meta name="description" content="Agenda financier OMYA CAPITAL : dates d'émissions d'obligations privées, clôtures des levées de fonds et comités d'investissement." />
+                <meta property="og:title" content="Calendrier Financier - OMYA CAPITAL" />
+                <meta property="og:description" content="Planning des opérations financières et émissions privées en zone CEMAC." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

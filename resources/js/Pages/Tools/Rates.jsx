@@ -6,7 +6,12 @@ import { TrendingUp, RefreshCw } from 'lucide-react';
 export default function Rates({ exchangeRates = [], interestRates = [] }) {
     return (
         <PublicLayout exchangeRates={exchangeRates} interestRates={interestRates}>
-            <Head title="Taux de Change & Devises - OMYA CAPITAL" />
+            <Head>
+                <title>Taux de Change & Devises - OMYA CAPITAL</title>
+                <meta name="description" content="Consultez les taux de change indicatifs, parités EUR/USD/XAF/XOF et évolutions des devises majeurs par OMYA CAPITAL." />
+                <meta property="og:title" content="Taux de Change & Devises - OMYA CAPITAL" />
+                <meta property="og:description" content="Suivi en direct des cours de devises et parités monétaires en zone CEMAC." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

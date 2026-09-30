@@ -6,7 +6,12 @@ import { BookOpen, FileText } from 'lucide-react';
 export default function Publications({ reports = [], news = [] }) {
     return (
         <PublicLayout>
-            <Head title="Publications Financières - OMYA CAPITAL" />
+            <Head>
+                <title>Publications Financières - OMYA CAPITAL</title>
+                <meta name="description" content="Bulletins d'information trimestriels, communiqués officiels et avis financiers publiés par OMYA CAPITAL." />
+                <meta property="og:title" content="Publications Financières - OMYA CAPITAL" />
+                <meta property="og:description" content="Toutes les revues, études et communiqués de la Société Intermédiaire Financière OMYA CAPITAL." />
+            </Head>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center max-w-3xl mx-auto mb-16">

@@ -88,7 +88,12 @@ export default function Index({ news = [] }) {
 
     return (
         <PublicLayout>
-            <Head title="Actualités & Analyses de Marché - OMYA CAPITAL" />
+            <Head>
+                <title>Actualités & Analyses de Marché - OMYA CAPITAL</title>
+                <meta name="description" content="Toutes les actualités financières, levées de fonds, analyses macroéconomiques CEMAC & UEMOA et études économiques d'OMYA CAPITAL." />
+                <meta property="og:title" content="Actualités & Notes de Marché - OMYA CAPITAL" />
+                <meta property="og:description" content="Décryptages financiers, opérations de capital-investissement et notes de conjoncture économique." />
+            </Head>
 
             {/* Hero */}
             <section className="sky-banner-bg text-white py-16 relative overflow-hidden">

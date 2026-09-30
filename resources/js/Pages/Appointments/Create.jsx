@@ -25,7 +25,12 @@ export default function Create({ services = [] }) {
 
     return (
         <PublicLayout>
-            <Head title="Prise de Rendez-vous Conseiller SIF - OMYA CAPITAL" />
+            <Head>
+                <title>Prise de Rendez-vous Conseiller SIF - OMYA CAPITAL</title>
+                <meta name="description" content="Prenez rendez-vous avec un conseiller financier OMYA CAPITAL pour étudier vos projets de placement, levée de fonds ou structuration financière." />
+                <meta property="og:title" content="Prise de Rendez-vous Conseiller SIF - OMYA CAPITAL" />
+                <meta property="og:description" content="Entretien confidentiel avec un expert financier en visioconférence ou en nos locaux." />
+            </Head>
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="text-center mb-12">
