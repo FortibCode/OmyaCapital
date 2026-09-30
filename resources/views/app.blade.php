@@ -6,6 +6,7 @@
         <meta name="description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique." />
         <meta name="theme-color" content="#1a3a5c">
         <meta name="robots" content="index, follow">
+        <meta name="google-site-verification" content="L8QK453dUfgPL-fK77jl7bUPWWPE4OqEuOPTAPlQwkM" />
 
         <title inertia>{{ config('app.name', 'OMYA CAPITAL') }}</title>
         <link rel="canonical" href="{{ url()->current() }}">
