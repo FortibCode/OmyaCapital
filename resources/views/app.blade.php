@@ -82,6 +82,22 @@
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
+        {{-- Reprise du contenu affiché par React, pour les robots et les visiteurs sans JavaScript --}}
+        <noscript>
+            <h1>OMYA CAPITAL</h1>
+            <p>Certaines choses ne se précipitent pas. Notre site arrive prochainement.</p>
+            <p>
+                OMYA CAPITAL est une Société Intermédiaire Financière (SIF) agréée, spécialisée
+                dans les placements financiers, le conseil stratégique en haut de bilan, la
+                structuration de dettes et les levées de fonds, en zone CEMAC et UEMOA.
+            </p>
+            <p>
+                76 avenue Amilcar Cabral, Immeuble Villarecci, Brazzaville, République du Congo —
+                <a href="mailto:contact@omya-capital.com">contact@omya-capital.com</a> —
+                <a href="tel:+242050987541">+242 05 098 75 41</a>
+            </p>
+        </noscript>
+
         @inertia
     </body>
 </html>
