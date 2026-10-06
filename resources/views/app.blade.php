@@ -12,16 +12,16 @@
         <title inertia>{{ config('app.name', 'OMYA CAPITAL') }}</title>
         <link rel="canonical" href="{{ url()->current() }}">
 
-        <!-- Favicon -->
+        <!-- Favicon (Conforme aux exigences Google 48x48+ carré) -->
+        <link rel="icon" type="image/png" sizes="256x256" href="{{ asset('favicon.png') }}">
         <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-        <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/omya-capital-logo.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon.png') }}">
 
         <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
         <meta property="og:type" content="website">
         <meta property="og:title" content="OMYA CAPITAL Partenaire Stratégique en Gestion de Capital">
         <meta property="og:description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
-        <meta property="og:image" content="{{ asset('images/omya-capital-logo.png') }}">
+        <meta property="og:image" content="{{ asset('favicon.png') }}">
         <meta property="og:image:alt" content="Logo OMYA CAPITAL">
         <meta property="og:url" content="{{ url()->current() }}">
         <meta property="og:locale" content="fr_FR">
@@ -40,28 +40,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-        <!-- Schema.org — Données structurées pour Google (Rich Results) -->
+        <!-- Schema.org — Données structurées pour Google (Rich Results & Logo Officiel) -->
         <script type="application/ld+json">
         {
-            "@@context": "https://schema.org",
-            "@@type": "FinancialService",
+            "@context": "https://schema.org",
+            "@type": "FinancialService",
             "name": "OMYA CAPITAL",
             "alternateName": "Omya Capital",
             "url": "https://omya-capital.com",
-            "logo": "https://omya-capital.com/images/omya-capital-logo.png",
-            "image": "https://omya-capital.com/images/omya-capital-logo.png",
+            "logo": "https://omya-capital.com/favicon.png",
+            "image": "https://omya-capital.com/favicon.png",
             "description": "OMYA CAPITAL est votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.",
             "email": "contact@omya-capital.com",
             "telephone": "+242050987541",
             "address": {
-                "@@type": "PostalAddress",
+                "@type": "PostalAddress",
                 "streetAddress": "76 avenue Amilcar Cabral, Immeuble Villarecci, en face du Radisson Blu",
                 "addressLocality": "Brazzaville",
                 "addressRegion": "Centre-ville",
                 "addressCountry": "CG"
             },
             "contactPoint": {
-                "@@type": "ContactPoint",
+                "@type": "ContactPoint",
                 "telephone": "+242050987541",
                 "email": "contact@omya-capital.com",
                 "contactType": "customer service",
