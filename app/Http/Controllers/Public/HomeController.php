@@ -12,9 +12,18 @@ class HomeController extends Controller
 {
     public function index(): Response
     {
+        try {
+            $services = Service::where('is_active', true)->get();
+            $partners = Partner::all();
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::error('HomeController DB Error: ' . $e->getMessage());
+            $services = collect([]);
+            $partners = collect([]);
+        }
+
         return Inertia::render('Home', [
-            'services' => Service::where('is_active', true)->get(),
-            'partners' => Partner::all(),
+            'services' => $services,
+            'partners' => $partners,
         ]);
     }
 }
