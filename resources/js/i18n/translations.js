@@ -32,7 +32,7 @@ export const translations = {
             label: "Flux SIF & Marchés",
         },
         home: {
-            title: "OMYA CAPITAL — Société Intermédiaire Financière",
+            title: "OMYA CAPITAL",
             heroMessage: "Certaines choses ne se précipitent pas.\nNotre site arrive prochainement.",
             heroCta: {
                 discoverServices: "Découvrir nos Métiers",
@@ -297,7 +297,7 @@ export const translations = {
             label: "SIF & Market Feed",
         },
         home: {
-            title: "OMYA CAPITAL — Financial Intermediary Company",
+            title: "OMYA CAPITAL",
             heroMessage: "Our full website will be available soon",
             heroCta: {
                 discoverServices: "Discover our Services",
@@ -562,7 +562,7 @@ export const translations = {
             label: "Fluxo SIF e Mercados",
         },
         home: {
-            title: "OMYA CAPITAL — Sociedade Intermediária Financeira",
+            title: "OMYA CAPITAL",
             heroMessage: "O nosso site completo estará disponível em breve",
             heroCta: {
                 discoverServices: "Descobrir as nossas soluções",
