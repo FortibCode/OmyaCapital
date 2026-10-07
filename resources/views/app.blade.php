@@ -19,7 +19,7 @@
 
         <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
         <meta property="og:type" content="website">
-        <meta property="og:title" content="OMYA CAPITAL Partenaire Stratégique en Gestion de Capital">
+        <meta property="og:title" content="OMYA CAPITAL">
         <meta property="og:description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
         <meta property="og:image" content="{{ asset('favicon.png') }}">
         <meta property="og:image:alt" content="Logo OMYA CAPITAL">
@@ -29,8 +29,8 @@
 
         <!-- Twitter / X Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="OMYA CAPITAL - Partenaire Stratégique en Gestion de Capital">
-        <meta name="twitter:description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
+        <meta name="twitter:title" content="OMYA CAPITAL">
+        <meta name="twitter:description" content="Votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
         <meta name="twitter:image" content="{{ asset('images/omya-capital-logo.png') }}">
 
         <!-- Fonts -->
