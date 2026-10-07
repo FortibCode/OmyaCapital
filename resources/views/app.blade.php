@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{-- Le contenu servi est français quelle que soit la locale du serveur : la
+     traduction est entièrement côté client (LanguageContext met à jour cet
+     attribut si le visiteur change de langue). --}}
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique." />
-        <meta name="keywords" content="OMYA CAPITAL, Omya Capital, gestion de capital, investissement, SIF, Société Intermédiaire Financière, structuration financière, levée de fonds, Afrique, Brazzaville, zone CEMAC, zone UEMOA" />
+        <meta name="description" content="Votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique." />
+        <meta name="keywords" content="OMYA CAPITAL" />
         <meta name="theme-color" content="#1a3a5c">
         <meta name="robots" content="index, follow">
         <meta name="google-site-verification" content="L8QK453dUfgPL-fK77jl7bUPWWPE4OqEuOPTAPlQwkM" />
 
         <title inertia>{{ config('app.name', 'OMYA CAPITAL') }}</title>
-        <link rel="canonical" href="{{ url()->current() }}">
+        {{-- Ancré sur APP_URL : url()->current() renvoyait l'adresse appelée,
+             chaque variante du domaine se déclarant alors comme l'originale. --}}
+        <link rel="canonical" href="{{ rtrim(config('app.url'), '/') . request()->getPathInfo() }}">
 
         <!-- Favicon (Conforme aux exigences Google 48x48+ carré) -->
         <link rel="icon" type="image/png" sizes="256x256" href="{{ asset('favicon.png') }}">
@@ -20,10 +25,10 @@
         <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
         <meta property="og:type" content="website">
         <meta property="og:title" content="OMYA CAPITAL">
-        <meta property="og:description" content="Découvrez OMYA CAPITAL, votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
+        <meta property="og:description" content="Votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique.">
         <meta property="og:image" content="{{ asset('favicon.png') }}">
         <meta property="og:image:alt" content="Logo OMYA CAPITAL">
-        <meta property="og:url" content="{{ url()->current() }}">
+        <meta property="og:url" content="{{ rtrim(config('app.url'), '/') . request()->getPathInfo() }}">
         <meta property="og:locale" content="fr_FR">
         <meta property="og:site_name" content="OMYA CAPITAL">
 
