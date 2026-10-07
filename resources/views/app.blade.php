@@ -7,7 +7,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Votre partenaire stratégique en gestion de capital, investissement et croissance financière en Afrique." />
-        <meta name="keywords" content="OMYA CAPITAL" />
         <meta name="theme-color" content="#1a3a5c">
         <meta name="robots" content="index, follow">
         <meta name="google-site-verification" content="L8QK453dUfgPL-fK77jl7bUPWWPE4OqEuOPTAPlQwkM" />
